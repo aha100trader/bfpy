@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='bfgateway.proto',
   package='bfgateway',
   syntax='proto3',
-  serialized_pb=_b('\n\x0f\x62\x66gateway.proto\x12\tbfgateway\x1a\x19google/protobuf/any.proto\"\x08\n\x06\x42\x66Void\"\xe6\x02\n\nBfTickData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x12\n\nactionDate\x18\x03 \x01(\t\x12\x10\n\x08tickTime\x18\x04 \x01(\t\x12\x11\n\tlastPrice\x18\x05 \x01(\x01\x12\x0e\n\x06volume\x18\x06 \x01(\x05\x12\x14\n\x0copenInterest\x18\x07 \x01(\x01\x12\x12\n\nlastVolume\x18\x08 \x01(\x05\x12\x11\n\topenPrice\x18\t \x01(\x01\x12\x11\n\thighPrice\x18\n \x01(\x01\x12\x10\n\x08lowPrice\x18\x0b \x01(\x01\x12\x15\n\rpreClosePrice\x18\x0c \x01(\x01\x12\x12\n\nupperLimit\x18\r \x01(\x01\x12\x12\n\nlowerLimit\x18\x0e \x01(\x01\x12\x11\n\tbidPrice1\x18\x0f \x01(\x01\x12\x11\n\taskPrice1\x18\x10 \x01(\x01\x12\x12\n\nbidVolume1\x18\x11 \x01(\x05\x12\x12\n\naskVolume1\x18\x12 \x01(\x05\"\xe8\x01\n\x0b\x42\x66TradeData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0f\n\x07tradeId\x18\x03 \x01(\t\x12\x11\n\tbfOrderId\x18\x04 \x01(\t\x12)\n\tdirection\x18\x05 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12#\n\x06offset\x18\x06 \x01(\x0e\x32\x13.bfgateway.BfOffset\x12\r\n\x05price\x18\x07 \x01(\x01\x12\x0e\n\x06volume\x18\x08 \x01(\x05\x12\x11\n\ttradeDate\x18\t \x01(\t\x12\x11\n\ttradeTime\x18\n \x01(\t\"\xad\x02\n\x0b\x42\x66OrderData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x11\n\tbfOrderId\x18\x03 \x01(\t\x12)\n\tdirection\x18\x04 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12#\n\x06offset\x18\x05 \x01(\x0e\x32\x13.bfgateway.BfOffset\x12\r\n\x05price\x18\x06 \x01(\x01\x12\x13\n\x0btotalVolume\x18\x07 \x01(\x05\x12\x14\n\x0ctradedVolume\x18\x08 \x01(\x05\x12#\n\x06status\x18\t \x01(\x0e\x32\x13.bfgateway.BfStatus\x12\x12\n\ninsertDate\x18\n \x01(\t\x12\x12\n\ninsertTime\x18\x0b \x01(\t\x12\x12\n\ncancelTime\x18\x0c \x01(\t\"\xa2\x01\n\x0e\x42\x66PositionData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12)\n\tdirection\x18\x03 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12\x10\n\x08position\x18\x04 \x01(\x05\x12\x0e\n\x06\x66rozen\x18\x05 \x01(\x05\x12\r\n\x05price\x18\x06 \x01(\x01\x12\x12\n\nydPosition\x18\x07 \x01(\x05\"\xb1\x01\n\rBfAccountData\x12\x11\n\taccountId\x18\x01 \x01(\t\x12\x12\n\npreBalance\x18\x02 \x01(\x01\x12\x0f\n\x07\x62\x61lance\x18\x03 \x01(\x01\x12\x11\n\tavailable\x18\x04 \x01(\x01\x12\x12\n\ncommission\x18\x05 \x01(\x01\x12\x14\n\x0c\x66rozenMargin\x18\x06 \x01(\x01\x12\x13\n\x0b\x63loseProfit\x18\x07 \x01(\x01\x12\x16\n\x0epositionProfit\x18\x08 \x01(\x01\"?\n\x0b\x42\x66\x45rrorData\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t\x12\x11\n\tmessageEx\x18\x03 \x01(\t\"*\n\tBfLogData\x12\x0c\n\x04when\x18\x01 \x01(\t\x12\x0f\n\x07message\x18\x02 \x01(\t\"\xe1\x01\n\x0e\x42\x66\x43ontractData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12*\n\x0cproductClass\x18\x04 \x01(\x0e\x32\x14.bfgateway.BfProduct\x12\x16\n\x0evolumeMultiple\x18\x05 \x01(\x05\x12\x11\n\tpriceTick\x18\x06 \x01(\x01\x12\x10\n\x08maxLimit\x18\x07 \x01(\x05\x12\x10\n\x08minLimit\x18\x08 \x01(\x05\x12\x11\n\tmaxMarket\x18\t \x01(\x05\x12\x11\n\tminMarket\x18\n \x01(\x05\"s\n\x12\x42\x66NotificationData\x12+\n\x04type\x18\x01 \x01(\x0e\x32\x1d.bfgateway.BfNotificationType\x12\x0c\n\x04\x63ode\x18\x02 \x01(\x05\x12\x0f\n\x07message\x18\x03 \x01(\t\x12\x11\n\tmessageEx\x18\x04 \x01(\t\"\x1d\n\nBfPingData\x12\x0f\n\x07message\x18\x01 \x01(\t\"&\n\x08\x42\x66KvData\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\"\xcc\x01\n\x0e\x42\x66SendOrderReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\r\n\x05price\x18\x03 \x01(\x01\x12\x0e\n\x06volume\x18\x04 \x01(\x05\x12)\n\tpriceType\x18\x05 \x01(\x0e\x32\x16.bfgateway.BfPriceType\x12)\n\tdirection\x18\x06 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12#\n\x06offset\x18\x07 \x01(\x0e\x32\x13.bfgateway.BfOffset\"$\n\x0f\x42\x66SendOrderResp\x12\x11\n\tbfOrderId\x18\x01 \x01(\t\"G\n\x10\x42\x66\x43\x61ncelOrderReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x11\n\tbfOrderId\x18\x03 \x01(\t\"\x85\x01\n\x10\x42\x66\x43onnectPushReq\x12\x10\n\x08\x63lientId\x18\x01 \x01(\t\x12\x13\n\x0btickHandler\x18\x02 \x01(\x08\x12\x14\n\x0ctradeHandler\x18\x03 \x01(\x08\x12\x12\n\nlogHandler\x18\x04 \x01(\x08\x12\x0e\n\x06symbol\x18\x05 \x01(\t\x12\x10\n\x08\x65xchange\x18\x06 \x01(\t\"4\n\x10\x42\x66GetContractReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t*`\n\x0b\x42\x66\x44irection\x12\x15\n\x11\x44IRECTION_UNKNOWN\x10\x00\x12\x12\n\x0e\x44IRECTION_LONG\x10\x01\x12\x13\n\x0f\x44IRECTION_SHORT\x10\x02\x12\x11\n\rDIRECTION_NET\x10\x03*s\n\x08\x42\x66Offset\x12\x12\n\x0eOFFSET_UNKNOWN\x10\x00\x12\x0f\n\x0bOFFSET_OPEN\x10\x01\x12\x10\n\x0cOFFSET_CLOSE\x10\x02\x12\x15\n\x11OFFSET_CLOSETODAY\x10\x03\x12\x19\n\x15OFFSET_CLOSEYESTERDAY\x10\x04*w\n\x08\x42\x66Status\x12\x12\n\x0eSTATUS_UNKNOWN\x10\x00\x12\x14\n\x10STATUS_NOTTRADED\x10\x01\x12\x15\n\x11STATUS_PARTTRADED\x10\x02\x12\x14\n\x10STATUS_ALLTRADED\x10\x03\x12\x14\n\x10STATUS_CANCELLED\x10\x04*I\n\tBfProduct\x12\x13\n\x0fPRODUCT_UNKNOWN\x10\x00\x12\x12\n\x0ePRODUCT_EQUITY\x10\x01\x12\x13\n\x0fPRODUCT_FUTURES\x10\x02*Y\n\x0b\x42\x66PriceType\x12\x15\n\x11PRICETYPE_UNKONWN\x10\x00\x12\x18\n\x14PRICETYPE_LIMITPRICE\x10\x01\x12\x19\n\x15PRICETYPE_MARKETPRICE\x10\x02*\xfa\x01\n\x12\x42\x66NotificationType\x12\x18\n\x14NOTIFICATION_UNKNOWN\x10\x00\x12\x1f\n\x1bNOTIFICATION_TRADEWILLBEGIN\x10\x01\x12\x1d\n\x19NOTIFICATION_GOTCONTRACTS\x10\x02\x12!\n\x1dNOTIFICATION_BEGINQUERYORDERS\x10\x03\x12\x1f\n\x1bNOTIFICATION_ENDQUERYORDERS\x10\x04\x12#\n\x1fNOTIFICATION_BEGINQUERYPOSITION\x10\x05\x12!\n\x1dNOTIFICATION_ENDQUERYPOSITION\x10\x06\x32\xc4\x04\n\x10\x42\x66GatewayService\x12\x36\n\x04Ping\x12\x15.bfgateway.BfPingData\x1a\x15.bfgateway.BfPingData\"\x00\x12\x44\n\x0b\x43onnectPush\x12\x1b.bfgateway.BfConnectPushReq\x1a\x14.google.protobuf.Any\"\x00\x30\x01\x12\x38\n\x0e\x44isconnectPush\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x12I\n\x0bGetContract\x12\x1b.bfgateway.BfGetContractReq\x1a\x19.bfgateway.BfContractData\"\x00\x30\x01\x12\x44\n\tSendOrder\x12\x19.bfgateway.BfSendOrderReq\x1a\x1a.bfgateway.BfSendOrderResp\"\x00\x12?\n\x0b\x43\x61ncelOrder\x12\x1b.bfgateway.BfCancelOrderReq\x1a\x11.bfgateway.BfVoid\"\x00\x12\x36\n\x0cQueryAccount\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x12\x37\n\rQueryPosition\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x12\x35\n\x0bQueryOrders\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x42)Z\'github.com/sunwangme/bfgo/api/bfgatewayb\x06proto3')
+  serialized_pb=_b('\n\x0f\x62\x66gateway.proto\x12\tbfgateway\x1a\x19google/protobuf/any.proto\"\x08\n\x06\x42\x66Void\"\xe6\x02\n\nBfTickData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x12\n\nactionDate\x18\x03 \x01(\t\x12\x10\n\x08tickTime\x18\x04 \x01(\t\x12\x11\n\tlastPrice\x18\x05 \x01(\x01\x12\x0e\n\x06volume\x18\x06 \x01(\x05\x12\x14\n\x0copenInterest\x18\x07 \x01(\x01\x12\x12\n\nlastVolume\x18\x08 \x01(\x05\x12\x11\n\topenPrice\x18\t \x01(\x01\x12\x11\n\thighPrice\x18\n \x01(\x01\x12\x10\n\x08lowPrice\x18\x0b \x01(\x01\x12\x15\n\rpreClosePrice\x18\x0c \x01(\x01\x12\x12\n\nupperLimit\x18\r \x01(\x01\x12\x12\n\nlowerLimit\x18\x0e \x01(\x01\x12\x11\n\tbidPrice1\x18\x0f \x01(\x01\x12\x11\n\taskPrice1\x18\x10 \x01(\x01\x12\x12\n\nbidVolume1\x18\x11 \x01(\x05\x12\x12\n\naskVolume1\x18\x12 \x01(\x05\"\xe8\x01\n\x0b\x42\x66TradeData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0f\n\x07tradeId\x18\x03 \x01(\t\x12\x11\n\tbfOrderId\x18\x04 \x01(\t\x12)\n\tdirection\x18\x05 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12#\n\x06offset\x18\x06 \x01(\x0e\x32\x13.bfgateway.BfOffset\x12\r\n\x05price\x18\x07 \x01(\x01\x12\x0e\n\x06volume\x18\x08 \x01(\x05\x12\x11\n\ttradeDate\x18\t \x01(\t\x12\x11\n\ttradeTime\x18\n \x01(\t\"\xad\x02\n\x0b\x42\x66OrderData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x11\n\tbfOrderId\x18\x03 \x01(\t\x12)\n\tdirection\x18\x04 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12#\n\x06offset\x18\x05 \x01(\x0e\x32\x13.bfgateway.BfOffset\x12\r\n\x05price\x18\x06 \x01(\x01\x12\x13\n\x0btotalVolume\x18\x07 \x01(\x05\x12\x14\n\x0ctradedVolume\x18\x08 \x01(\x05\x12#\n\x06status\x18\t \x01(\x0e\x32\x13.bfgateway.BfStatus\x12\x12\n\ninsertDate\x18\n \x01(\t\x12\x12\n\ninsertTime\x18\x0b \x01(\t\x12\x12\n\ncancelTime\x18\x0c \x01(\t\"\xa2\x01\n\x0e\x42\x66PositionData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12)\n\tdirection\x18\x03 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12\x10\n\x08position\x18\x04 \x01(\x05\x12\x0e\n\x06\x66rozen\x18\x05 \x01(\x05\x12\r\n\x05price\x18\x06 \x01(\x01\x12\x12\n\nydPosition\x18\x07 \x01(\x05\"\xb1\x01\n\rBfAccountData\x12\x11\n\taccountId\x18\x01 \x01(\t\x12\x12\n\npreBalance\x18\x02 \x01(\x01\x12\x0f\n\x07\x62\x61lance\x18\x03 \x01(\x01\x12\x11\n\tavailable\x18\x04 \x01(\x01\x12\x12\n\ncommission\x18\x05 \x01(\x01\x12\x14\n\x0c\x66rozenMargin\x18\x06 \x01(\x01\x12\x13\n\x0b\x63loseProfit\x18\x07 \x01(\x01\x12\x16\n\x0epositionProfit\x18\x08 \x01(\x01\"?\n\x0b\x42\x66\x45rrorData\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x05\x12\x0f\n\x07message\x18\x02 \x01(\t\x12\x11\n\tmessageEx\x18\x03 \x01(\t\"*\n\tBfLogData\x12\x0c\n\x04when\x18\x01 \x01(\t\x12\x0f\n\x07message\x18\x02 \x01(\t\"\xe1\x01\n\x0e\x42\x66\x43ontractData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12*\n\x0cproductClass\x18\x04 \x01(\x0e\x32\x14.bfgateway.BfProduct\x12\x16\n\x0evolumeMultiple\x18\x05 \x01(\x05\x12\x11\n\tpriceTick\x18\x06 \x01(\x01\x12\x10\n\x08maxLimit\x18\x07 \x01(\x05\x12\x10\n\x08minLimit\x18\x08 \x01(\x05\x12\x11\n\tmaxMarket\x18\t \x01(\x05\x12\x11\n\tminMarket\x18\n \x01(\x05\"s\n\x12\x42\x66NotificationData\x12+\n\x04type\x18\x01 \x01(\x0e\x32\x1d.bfgateway.BfNotificationType\x12\x0c\n\x04\x63ode\x18\x02 \x01(\x05\x12\x0f\n\x07message\x18\x03 \x01(\t\x12\x11\n\tmessageEx\x18\x04 \x01(\t\"\x1d\n\nBfPingData\x12\x0f\n\x07message\x18\x01 \x01(\t\"&\n\x08\x42\x66KvData\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\"\xcc\x01\n\x0e\x42\x66SendOrderReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\r\n\x05price\x18\x03 \x01(\x01\x12\x0e\n\x06volume\x18\x04 \x01(\x05\x12)\n\tpriceType\x18\x05 \x01(\x0e\x32\x16.bfgateway.BfPriceType\x12)\n\tdirection\x18\x06 \x01(\x0e\x32\x16.bfgateway.BfDirection\x12#\n\x06offset\x18\x07 \x01(\x0e\x32\x13.bfgateway.BfOffset\"$\n\x0f\x42\x66SendOrderResp\x12\x11\n\tbfOrderId\x18\x01 \x01(\t\"G\n\x10\x42\x66\x43\x61ncelOrderReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x11\n\tbfOrderId\x18\x03 \x01(\t\"\xa9\x01\n\x10\x42\x66\x43onnectPushReq\x12\x10\n\x08\x63lientId\x18\x01 \x01(\t\x12\x13\n\x0btickHandler\x18\x02 \x01(\x08\x12\x14\n\x0ctradeHandler\x18\x03 \x01(\x08\x12\x12\n\nlogHandler\x18\x04 \x01(\x08\x12\x0e\n\x06symbol\x18\x05 \x01(\t\x12\x10\n\x08\x65xchange\x18\x06 \x01(\t\x12\x10\n\x08intParam\x18\x07 \x01(\x05\x12\x10\n\x08strParam\x18\x08 \x01(\t\"4\n\x10\x42\x66GetContractReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t*`\n\x0b\x42\x66\x44irection\x12\x15\n\x11\x44IRECTION_UNKNOWN\x10\x00\x12\x12\n\x0e\x44IRECTION_LONG\x10\x01\x12\x13\n\x0f\x44IRECTION_SHORT\x10\x02\x12\x11\n\rDIRECTION_NET\x10\x03*s\n\x08\x42\x66Offset\x12\x12\n\x0eOFFSET_UNKNOWN\x10\x00\x12\x0f\n\x0bOFFSET_OPEN\x10\x01\x12\x10\n\x0cOFFSET_CLOSE\x10\x02\x12\x15\n\x11OFFSET_CLOSETODAY\x10\x03\x12\x19\n\x15OFFSET_CLOSEYESTERDAY\x10\x04*w\n\x08\x42\x66Status\x12\x12\n\x0eSTATUS_UNKNOWN\x10\x00\x12\x14\n\x10STATUS_NOTTRADED\x10\x01\x12\x15\n\x11STATUS_PARTTRADED\x10\x02\x12\x14\n\x10STATUS_ALLTRADED\x10\x03\x12\x14\n\x10STATUS_CANCELLED\x10\x04*I\n\tBfProduct\x12\x13\n\x0fPRODUCT_UNKNOWN\x10\x00\x12\x12\n\x0ePRODUCT_EQUITY\x10\x01\x12\x13\n\x0fPRODUCT_FUTURES\x10\x02*Y\n\x0b\x42\x66PriceType\x12\x15\n\x11PRICETYPE_UNKONWN\x10\x00\x12\x18\n\x14PRICETYPE_LIMITPRICE\x10\x01\x12\x19\n\x15PRICETYPE_MARKETPRICE\x10\x02*\xfa\x01\n\x12\x42\x66NotificationType\x12\x18\n\x14NOTIFICATION_UNKNOWN\x10\x00\x12\x1f\n\x1bNOTIFICATION_TRADEWILLBEGIN\x10\x01\x12\x1d\n\x19NOTIFICATION_GOTCONTRACTS\x10\x02\x12!\n\x1dNOTIFICATION_BEGINQUERYORDERS\x10\x03\x12\x1f\n\x1bNOTIFICATION_ENDQUERYORDERS\x10\x04\x12#\n\x1fNOTIFICATION_BEGINQUERYPOSITION\x10\x05\x12!\n\x1dNOTIFICATION_ENDQUERYPOSITION\x10\x06\x32\xc4\x04\n\x10\x42\x66GatewayService\x12\x36\n\x04Ping\x12\x15.bfgateway.BfPingData\x1a\x15.bfgateway.BfPingData\"\x00\x12\x44\n\x0b\x43onnectPush\x12\x1b.bfgateway.BfConnectPushReq\x1a\x14.google.protobuf.Any\"\x00\x30\x01\x12\x38\n\x0e\x44isconnectPush\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x12I\n\x0bGetContract\x12\x1b.bfgateway.BfGetContractReq\x1a\x19.bfgateway.BfContractData\"\x00\x30\x01\x12\x44\n\tSendOrder\x12\x19.bfgateway.BfSendOrderReq\x1a\x1a.bfgateway.BfSendOrderResp\"\x00\x12?\n\x0b\x43\x61ncelOrder\x12\x1b.bfgateway.BfCancelOrderReq\x1a\x11.bfgateway.BfVoid\"\x00\x12\x36\n\x0cQueryAccount\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x12\x37\n\rQueryPosition\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x12\x35\n\x0bQueryOrders\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x42)Z\'github.com/sunwangme/bfgo/api/bfgatewayb\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_any__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -51,8 +51,8 @@ _BFDIRECTION = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2345,
-  serialized_end=2441,
+  serialized_start=2381,
+  serialized_end=2477,
 )
 _sym_db.RegisterEnumDescriptor(_BFDIRECTION)
 
@@ -86,8 +86,8 @@ _BFOFFSET = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2443,
-  serialized_end=2558,
+  serialized_start=2479,
+  serialized_end=2594,
 )
 _sym_db.RegisterEnumDescriptor(_BFOFFSET)
 
@@ -121,8 +121,8 @@ _BFSTATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2560,
-  serialized_end=2679,
+  serialized_start=2596,
+  serialized_end=2715,
 )
 _sym_db.RegisterEnumDescriptor(_BFSTATUS)
 
@@ -148,8 +148,8 @@ _BFPRODUCT = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2681,
-  serialized_end=2754,
+  serialized_start=2717,
+  serialized_end=2790,
 )
 _sym_db.RegisterEnumDescriptor(_BFPRODUCT)
 
@@ -175,8 +175,8 @@ _BFPRICETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2756,
-  serialized_end=2845,
+  serialized_start=2792,
+  serialized_end=2881,
 )
 _sym_db.RegisterEnumDescriptor(_BFPRICETYPE)
 
@@ -218,8 +218,8 @@ _BFNOTIFICATIONTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2848,
-  serialized_end=3098,
+  serialized_start=2884,
+  serialized_end=3134,
 )
 _sym_db.RegisterEnumDescriptor(_BFNOTIFICATIONTYPE)
 
@@ -316,7 +316,7 @@ _BFTICKDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='lastPrice', full_name='bfgateway.BfTickData.lastPrice', index=4,
       number=5, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -330,7 +330,7 @@ _BFTICKDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='openInterest', full_name='bfgateway.BfTickData.openInterest', index=6,
       number=7, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -344,56 +344,56 @@ _BFTICKDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='openPrice', full_name='bfgateway.BfTickData.openPrice', index=8,
       number=9, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='highPrice', full_name='bfgateway.BfTickData.highPrice', index=9,
       number=10, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='lowPrice', full_name='bfgateway.BfTickData.lowPrice', index=10,
       number=11, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='preClosePrice', full_name='bfgateway.BfTickData.preClosePrice', index=11,
       number=12, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='upperLimit', full_name='bfgateway.BfTickData.upperLimit', index=12,
       number=13, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='lowerLimit', full_name='bfgateway.BfTickData.lowerLimit', index=13,
       number=14, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='bidPrice1', full_name='bfgateway.BfTickData.bidPrice1', index=14,
       number=15, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='askPrice1', full_name='bfgateway.BfTickData.askPrice1', index=15,
       number=16, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -480,7 +480,7 @@ _BFTRADEDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='price', full_name='bfgateway.BfTradeData.price', index=6,
       number=7, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -567,7 +567,7 @@ _BFORDERDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='price', full_name='bfgateway.BfOrderData.price', index=5,
       number=6, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -675,7 +675,7 @@ _BFPOSITIONDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='price', full_name='bfgateway.BfPositionData.price', index=5,
       number=6, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -720,49 +720,49 @@ _BFACCOUNTDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='preBalance', full_name='bfgateway.BfAccountData.preBalance', index=1,
       number=2, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='balance', full_name='bfgateway.BfAccountData.balance', index=2,
       number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='available', full_name='bfgateway.BfAccountData.available', index=3,
       number=4, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='commission', full_name='bfgateway.BfAccountData.commission', index=4,
       number=5, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='frozenMargin', full_name='bfgateway.BfAccountData.frozenMargin', index=5,
       number=6, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='closeProfit', full_name='bfgateway.BfAccountData.closeProfit', index=6,
       number=7, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='positionProfit', full_name='bfgateway.BfAccountData.positionProfit', index=7,
       number=8, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -911,7 +911,7 @@ _BFCONTRACTDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='priceTick', full_name='bfgateway.BfContractData.priceTick', index=5,
       number=6, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1105,7 +1105,7 @@ _BFSENDORDERREQ = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='price', full_name='bfgateway.BfSendOrderReq.price', index=2,
       number=3, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -1279,6 +1279,20 @@ _BFCONNECTPUSHREQ = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='intParam', full_name='bfgateway.BfConnectPushReq.intParam', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='strParam', full_name='bfgateway.BfConnectPushReq.strParam', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -1292,7 +1306,7 @@ _BFCONNECTPUSHREQ = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=2156,
-  serialized_end=2289,
+  serialized_end=2325,
 )
 
 
@@ -1329,8 +1343,8 @@ _BFGETCONTRACTREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2291,
-  serialized_end=2343,
+  serialized_start=2327,
+  serialized_end=2379,
 )
 
 _BFTRADEDATA.fields_by_name['direction'].enum_type = _BFDIRECTION

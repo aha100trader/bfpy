@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='bfdatafeed.proto',
   package='bfdatafeed',
   syntax='proto3',
-  serialized_pb=_b('\n\x10\x62\x66\x64\x61tafeed.proto\x12\nbfdatafeed\x1a\x0f\x62\x66gateway.proto\"\x81\x02\n\tBfBarData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\'\n\x06period\x18\x03 \x01(\x0e\x32\x17.bfdatafeed.BfBarPeriod\x12\x12\n\nactionDate\x18\x04 \x01(\t\x12\x0f\n\x07\x62\x61rTime\x18\x05 \x01(\t\x12\x0e\n\x06volume\x18\x06 \x01(\x05\x12\x14\n\x0copenInterest\x18\x07 \x01(\x01\x12\x12\n\nlastVolume\x18\x08 \x01(\x05\x12\x11\n\topenPrice\x18\t \x01(\x01\x12\x11\n\thighPrice\x18\n \x01(\x01\x12\x10\n\x08lowPrice\x18\x0b \x01(\x01\x12\x12\n\nclosePrice\x18\x0c \x01(\x01\"_\n\x0c\x42\x66GetTickReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0e\n\x06toDate\x18\x03 \x01(\t\x12\x0e\n\x06toTime\x18\x04 \x01(\t\x12\r\n\x05\x63ount\x18\x05 \x01(\x05\"\x87\x01\n\x0b\x42\x66GetBarReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\'\n\x06period\x18\x03 \x01(\x0e\x32\x17.bfdatafeed.BfBarPeriod\x12\x0e\n\x06toDate\x18\x04 \x01(\t\x12\x0e\n\x06toTime\x18\x05 \x01(\t\x12\r\n\x05\x63ount\x18\x06 \x01(\x05\"w\n\x0f\x42\x66\x44\x65leteTickReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0e\n\x06toDate\x18\x03 \x01(\t\x12\x0e\n\x06toTime\x18\x04 \x01(\t\x12\x10\n\x08\x66romDate\x18\x05 \x01(\t\x12\x10\n\x08\x66romTime\x18\x06 \x01(\t\"\x9f\x01\n\x0e\x42\x66\x44\x65leteBarReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\'\n\x06period\x18\x03 \x01(\x0e\x32\x17.bfdatafeed.BfBarPeriod\x12\x0e\n\x06toDate\x18\x04 \x01(\t\x12\x0e\n\x06toTime\x18\x05 \x01(\t\x12\x10\n\x08\x66romDate\x18\x06 \x01(\t\x12\x10\n\x08\x66romTime\x18\x07 \x01(\t\"7\n\x13\x42\x66\x44\x65leteContractReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t*\xd1\x02\n\x0b\x42\x66\x42\x61rPeriod\x12\x12\n\x0ePERIOD_UNKNOWN\x10\x00\x12\x0e\n\nPERIOD_S01\x10\x01\x12\x0e\n\nPERIOD_S03\x10\x02\x12\x0e\n\nPERIOD_S05\x10\x03\x12\x0e\n\nPERIOD_S10\x10\x04\x12\x0e\n\nPERIOD_S15\x10\x05\x12\x0e\n\nPERIOD_S30\x10\x06\x12\x0e\n\nPERIOD_M01\x10\x07\x12\x0e\n\nPERIOD_M03\x10\x08\x12\x0e\n\nPERIOD_M05\x10\t\x12\x0e\n\nPERIOD_M10\x10\n\x12\x0e\n\nPERIOD_M15\x10\x0b\x12\x0e\n\nPERIOD_M30\x10\x0c\x12\x0e\n\nPERIOD_H01\x10\r\x12\x0e\n\nPERIOD_H02\x10\x0e\x12\x0e\n\nPERIOD_H03\x10\x0f\x12\x0e\n\nPERIOD_H04\x10\x10\x12\x0e\n\nPERIOD_D01\x10\x11\x12\x0e\n\nPERIOD_W01\x10\x12\x12\x0e\n\nPERIOD_X01\x10\x13\x32\xc3\x05\n\x11\x42\x66\x44\x61tafeedService\x12\x36\n\x04Ping\x12\x15.bfgateway.BfPingData\x1a\x15.bfgateway.BfPingData\"\x00\x12\x38\n\nInsertTick\x12\x15.bfgateway.BfTickData\x1a\x11.bfgateway.BfVoid\"\x00\x12\x37\n\tInsertBar\x12\x15.bfdatafeed.BfBarData\x1a\x11.bfgateway.BfVoid\"\x00\x12@\n\x0eInsertContract\x12\x19.bfgateway.BfContractData\x1a\x11.bfgateway.BfVoid\"\x00\x12>\n\x07GetTick\x12\x18.bfdatafeed.BfGetTickReq\x1a\x15.bfgateway.BfTickData\"\x00\x30\x01\x12<\n\x06GetBar\x12\x17.bfdatafeed.BfGetBarReq\x1a\x15.bfdatafeed.BfBarData\"\x00\x30\x01\x12I\n\x0bGetContract\x12\x1b.bfgateway.BfGetContractReq\x1a\x19.bfgateway.BfContractData\"\x00\x30\x01\x12>\n\nDeleteTick\x12\x1b.bfdatafeed.BfDeleteTickReq\x1a\x11.bfgateway.BfVoid\"\x00\x12<\n\tDeleteBar\x12\x1a.bfdatafeed.BfDeleteBarReq\x1a\x11.bfgateway.BfVoid\"\x00\x12\x46\n\x0e\x44\x65leteContract\x12\x1f.bfdatafeed.BfDeleteContractReq\x1a\x11.bfgateway.BfVoid\"\x00\x12\x32\n\x08\x43leanAll\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x42*Z(github.com/sunwangme/bfgo/api/bfdatafeedb\x06proto3')
+  serialized_pb=_b('\n\x10\x62\x66\x64\x61tafeed.proto\x12\nbfdatafeed\x1a\x0f\x62\x66gateway.proto\"\x81\x02\n\tBfBarData\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\'\n\x06period\x18\x03 \x01(\x0e\x32\x17.bfdatafeed.BfBarPeriod\x12\x12\n\nactionDate\x18\x04 \x01(\t\x12\x0f\n\x07\x62\x61rTime\x18\x05 \x01(\t\x12\x0e\n\x06volume\x18\x06 \x01(\x05\x12\x14\n\x0copenInterest\x18\x07 \x01(\x01\x12\x12\n\nlastVolume\x18\x08 \x01(\x05\x12\x11\n\topenPrice\x18\t \x01(\x01\x12\x11\n\thighPrice\x18\n \x01(\x01\x12\x10\n\x08lowPrice\x18\x0b \x01(\x01\x12\x12\n\nclosePrice\x18\x0c \x01(\x01\"\x83\x01\n\x0c\x42\x66GetTickReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0e\n\x06toDate\x18\x03 \x01(\t\x12\x0e\n\x06toTime\x18\x04 \x01(\t\x12\r\n\x05\x63ount\x18\x05 \x01(\x05\x12\x10\n\x08\x66romDate\x18\x06 \x01(\t\x12\x10\n\x08\x66romTime\x18\x07 \x01(\t\"\xab\x01\n\x0b\x42\x66GetBarReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\'\n\x06period\x18\x03 \x01(\x0e\x32\x17.bfdatafeed.BfBarPeriod\x12\x0e\n\x06toDate\x18\x04 \x01(\t\x12\x0e\n\x06toTime\x18\x05 \x01(\t\x12\r\n\x05\x63ount\x18\x06 \x01(\x05\x12\x10\n\x08\x66romDate\x18\x07 \x01(\t\x12\x10\n\x08\x66romTime\x18\x08 \x01(\t\"w\n\x0f\x42\x66\x44\x65leteTickReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\x0e\n\x06toDate\x18\x03 \x01(\t\x12\x0e\n\x06toTime\x18\x04 \x01(\t\x12\x10\n\x08\x66romDate\x18\x05 \x01(\t\x12\x10\n\x08\x66romTime\x18\x06 \x01(\t\"\x9f\x01\n\x0e\x42\x66\x44\x65leteBarReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t\x12\'\n\x06period\x18\x03 \x01(\x0e\x32\x17.bfdatafeed.BfBarPeriod\x12\x0e\n\x06toDate\x18\x04 \x01(\t\x12\x0e\n\x06toTime\x18\x05 \x01(\t\x12\x10\n\x08\x66romDate\x18\x06 \x01(\t\x12\x10\n\x08\x66romTime\x18\x07 \x01(\t\"7\n\x13\x42\x66\x44\x65leteContractReq\x12\x0e\n\x06symbol\x18\x01 \x01(\t\x12\x10\n\x08\x65xchange\x18\x02 \x01(\t*\xd1\x02\n\x0b\x42\x66\x42\x61rPeriod\x12\x12\n\x0ePERIOD_UNKNOWN\x10\x00\x12\x0e\n\nPERIOD_S01\x10\x01\x12\x0e\n\nPERIOD_S03\x10\x02\x12\x0e\n\nPERIOD_S05\x10\x03\x12\x0e\n\nPERIOD_S10\x10\x04\x12\x0e\n\nPERIOD_S15\x10\x05\x12\x0e\n\nPERIOD_S30\x10\x06\x12\x0e\n\nPERIOD_M01\x10\x07\x12\x0e\n\nPERIOD_M03\x10\x08\x12\x0e\n\nPERIOD_M05\x10\t\x12\x0e\n\nPERIOD_M10\x10\n\x12\x0e\n\nPERIOD_M15\x10\x0b\x12\x0e\n\nPERIOD_M30\x10\x0c\x12\x0e\n\nPERIOD_H01\x10\r\x12\x0e\n\nPERIOD_H02\x10\x0e\x12\x0e\n\nPERIOD_H03\x10\x0f\x12\x0e\n\nPERIOD_H04\x10\x10\x12\x0e\n\nPERIOD_D01\x10\x11\x12\x0e\n\nPERIOD_W01\x10\x12\x12\x0e\n\nPERIOD_X01\x10\x13\x32\xc3\x05\n\x11\x42\x66\x44\x61tafeedService\x12\x36\n\x04Ping\x12\x15.bfgateway.BfPingData\x1a\x15.bfgateway.BfPingData\"\x00\x12\x38\n\nInsertTick\x12\x15.bfgateway.BfTickData\x1a\x11.bfgateway.BfVoid\"\x00\x12\x37\n\tInsertBar\x12\x15.bfdatafeed.BfBarData\x1a\x11.bfgateway.BfVoid\"\x00\x12@\n\x0eInsertContract\x12\x19.bfgateway.BfContractData\x1a\x11.bfgateway.BfVoid\"\x00\x12>\n\x07GetTick\x12\x18.bfdatafeed.BfGetTickReq\x1a\x15.bfgateway.BfTickData\"\x00\x30\x01\x12<\n\x06GetBar\x12\x17.bfdatafeed.BfGetBarReq\x1a\x15.bfdatafeed.BfBarData\"\x00\x30\x01\x12I\n\x0bGetContract\x12\x1b.bfgateway.BfGetContractReq\x1a\x19.bfgateway.BfContractData\"\x00\x30\x01\x12>\n\nDeleteTick\x12\x1b.bfdatafeed.BfDeleteTickReq\x1a\x11.bfgateway.BfVoid\"\x00\x12<\n\tDeleteBar\x12\x1a.bfdatafeed.BfDeleteBarReq\x1a\x11.bfgateway.BfVoid\"\x00\x12\x46\n\x0e\x44\x65leteContract\x12\x1f.bfdatafeed.BfDeleteContractReq\x1a\x11.bfgateway.BfVoid\"\x00\x12\x32\n\x08\x43leanAll\x12\x11.bfgateway.BfVoid\x1a\x11.bfgateway.BfVoid\"\x00\x42*Z(github.com/sunwangme/bfgo/api/bfdatafeedb\x06proto3')
   ,
   dependencies=[bfgateway__pb2.DESCRIPTOR,])
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
@@ -115,8 +115,8 @@ _BFBARPERIOD = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=885,
-  serialized_end=1222,
+  serialized_start=958,
+  serialized_end=1295,
 )
 _sym_db.RegisterEnumDescriptor(_BFBARPERIOD)
 
@@ -196,7 +196,7 @@ _BFBARDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='openInterest', full_name='bfdatafeed.BfBarData.openInterest', index=6,
       number=7, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -210,28 +210,28 @@ _BFBARDATA = _descriptor.Descriptor(
     _descriptor.FieldDescriptor(
       name='openPrice', full_name='bfdatafeed.BfBarData.openPrice', index=8,
       number=9, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='highPrice', full_name='bfdatafeed.BfBarData.highPrice', index=9,
       number=10, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='lowPrice', full_name='bfdatafeed.BfBarData.lowPrice', index=10,
       number=11, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
       name='closePrice', full_name='bfdatafeed.BfBarData.closePrice', index=11,
       number=12, type=1, cpp_type=5, label=1,
-      has_default_value=False, default_value=float(0),
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -294,6 +294,20 @@ _BFGETTICKREQ = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='fromDate', full_name='bfdatafeed.BfGetTickReq.fromDate', index=5,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fromTime', full_name='bfdatafeed.BfGetTickReq.fromTime', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -306,8 +320,8 @@ _BFGETTICKREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=309,
-  serialized_end=404,
+  serialized_start=310,
+  serialized_end=441,
 )
 
 
@@ -360,6 +374,20 @@ _BFGETBARREQ = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
+    _descriptor.FieldDescriptor(
+      name='fromDate', full_name='bfdatafeed.BfGetBarReq.fromDate', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='fromTime', full_name='bfdatafeed.BfGetBarReq.fromTime', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
   ],
   extensions=[
   ],
@@ -372,8 +400,8 @@ _BFGETBARREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=407,
-  serialized_end=542,
+  serialized_start=444,
+  serialized_end=615,
 )
 
 
@@ -438,8 +466,8 @@ _BFDELETETICKREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=544,
-  serialized_end=663,
+  serialized_start=617,
+  serialized_end=736,
 )
 
 
@@ -511,8 +539,8 @@ _BFDELETEBARREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=666,
-  serialized_end=825,
+  serialized_start=739,
+  serialized_end=898,
 )
 
 
@@ -549,8 +577,8 @@ _BFDELETECONTRACTREQ = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=827,
-  serialized_end=882,
+  serialized_start=900,
+  serialized_end=955,
 )
 
 _BFBARDATA.fields_by_name['period'].enum_type = _BFBARPERIOD
