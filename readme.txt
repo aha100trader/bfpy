@@ -9,13 +9,8 @@ QQ交流群340195342，点击加入：http://jq.qq.com/?_wv=1027&k=2ADNTk3
 
 2. 安装grpc for python
    2.1 安装python python-2.7.11.msi
-   2.2 安装python库,安装包在 python_libs目录下
-      2.2.1 pip install six-xxx
-      2.2.2 pip install setuptools-xxx
-      2.2.3 pip install enum34-xxx
-      2.2.4 pip install futures-xxx
-      2.2.5 pip install protobuf-xxx
-      2.2.6 pip install grpcio-xxx
+   2.2 安装grpcio库：pip install "grpcio>=0.13.1"
+   2.3 装了老版本的，可以升级：pip install grpcio --upgrade
 
 3. 写策略，调试策略，运行策略
     3.1 运行ctpgateway.exe,datafeed.exe
