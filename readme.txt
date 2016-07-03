@@ -8,7 +8,7 @@ QQ交流群340195342，点击加入：http://jq.qq.com/?_wv=1027&k=2ADNTk3
 下载地址: http://pan.baidu.com/s/1nvgrNst
 
 2. 安装grpc for python
-   2.1 安装python python-2.7.11.msi
+   2.1 安装python-2.7.11.msi (https://www.python.org/ftp/python/2.7.11/python-2.7.11.msi)
    2.2 安装grpcio库：pip install "grpcio>=0.13.1"
    2.3 装了老版本的，可以升级：pip install grpcio --upgrade
 
