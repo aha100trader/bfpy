@@ -18,7 +18,7 @@ service BfCtaService{
     // 断开push
     rpc DisconnectPush(bfgateway.BfVoid) returns (bfgateway.BfVoid) {}
     
-    // 活跃检测
+    // 活跃检测=
     rpc Ping(bfgateway.BfPingData) returns (bfgateway.BfPingData) {}
             
     // 开始cta
